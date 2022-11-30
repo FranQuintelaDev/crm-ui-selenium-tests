@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="com.serenity.sandbox.AppTests.LoginPageTest" skipped="0" tests="1" time="10.63" timestamp="2022-11-24 12:54:04"><testcase classname="com.serenity.sandbox.AppTests.LoginPageTest" name="Login test with correct data"/></testsuite>
