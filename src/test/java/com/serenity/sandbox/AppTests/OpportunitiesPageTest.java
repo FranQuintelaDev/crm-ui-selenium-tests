@@ -13,20 +13,22 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 import com.serenity.sandbox.steps.LoginPageSteps;
+import com.serenity.sandbox.steps.OpportunitiesPageSteps;
 
 @RunWith(SerenityRunner.class)
 public class OpportunitiesPageTest extends BaseTest{
 
+    @Steps
+    OpportunitiesPageSteps opportunitiesPageSteps;
 
     @Before
     public void setup(){
-        
+    	opportunitiesPageSteps.isOnOpportunitiesPage();
     }
 
-    @Pending
     @Test
     public void getOpportunitiesFindExistingOpExpectOK(){
-
+    	opportunitiesPageSteps.existingOpportunityShouldBeVisible();
     }
 
     @Pending
