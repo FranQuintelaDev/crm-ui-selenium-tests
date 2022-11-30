@@ -13,19 +13,22 @@ import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 import com.serenity.sandbox.steps.LoginPageSteps;
+import com.serenity.sandbox.steps.SignUpPageSteps;
 
 @RunWith(SerenityRunner.class)
 public class SignUpPageTest extends BaseTest{
 
-
+    @Steps
+    SignUpPageSteps signUpPageSteps;
+    
     @Before
     public void setup(){
-        
+    	signUpPageSteps.isOnSignUpPage();
     }
 
-    @Pending
     @Test
     public void signUpExpectOK(){
+    	signUpPageSteps.signUpAsUser();
 
     }
 
