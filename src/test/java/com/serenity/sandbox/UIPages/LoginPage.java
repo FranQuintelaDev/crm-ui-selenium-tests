@@ -17,6 +17,5 @@ public class LoginPage extends PageObject {
 	  public boolean welcomePageMsgIsVisible(){
 	      return  $("#welcomePageMsg").getText()!=null;
 	  }
-	  
-
+	
 }
