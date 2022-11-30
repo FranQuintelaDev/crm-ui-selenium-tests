@@ -18,14 +18,18 @@ import com.serenity.sandbox.steps.LoginPageSteps;
 public class LoginPageTest extends BaseTest{
 
 
+    @Steps
+    LoginPageSteps logInPageSteps;
+    
     @Before
     public void setup(){
-        
+    	logInPageSteps.isOnLoginPage();
+
     }
 
-    @Pending
     @Test
     public void loginExpectOk(){
+    	logInPageSteps.loginAsUser();
 
     }
 

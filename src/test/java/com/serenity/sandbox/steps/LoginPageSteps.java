@@ -16,24 +16,13 @@ public class LoginPageSteps {
 
     @Step
     public void loginAsUser(){
-        loginPage.doLogin();
+        loginPage.doLogIn();
     }
 
     @Step
     public void userShouldBeLogin(){
-        Assert.assertTrue(loginPage.logoutLinkIsVisible().equals("Logout"));
+        Assert.assertTrue(loginPage.welcomePageMsgIsVisible());
     }
-
-    @Step
-    public void navigateToTransactionsPage(){
-        loginPage.goToTransactionsPage();
-    }
-
-	public void navigateToContactsUsPage() {
-		// TODO Auto-generated method stub
-		
-	}
-
 
 
 }
