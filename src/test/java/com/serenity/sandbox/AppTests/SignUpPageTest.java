@@ -15,7 +15,7 @@ import org.openqa.selenium.WebDriver;
 import com.serenity.sandbox.steps.LoginPageSteps;
 
 @RunWith(SerenityRunner.class)
-public class LoginPageTest extends BaseTest{
+public class SignUpPageTest extends BaseTest{
 
 
     @Before
@@ -25,26 +25,15 @@ public class LoginPageTest extends BaseTest{
 
     @Pending
     @Test
-    public void loginExpectOk(){
+    public void signUpExpectOK(){
 
     }
 
     @Pending
     @Test
-    public void loginWrongPassExpectKO(){
+    public void signUpExistingUserExpectKO(){
 
     }
 
-    @Pending
-    @Test
-    public void loginNonExistingUserExpectKO(){
-
-    }
-
-    @Pending
-    @Test
-    public void loginInvalidDataExpectKO(){
-
-    }
 
 }

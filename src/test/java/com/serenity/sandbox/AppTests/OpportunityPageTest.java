@@ -15,7 +15,7 @@ import org.openqa.selenium.WebDriver;
 import com.serenity.sandbox.steps.LoginPageSteps;
 
 @RunWith(SerenityRunner.class)
-public class LoginPageTest extends BaseTest{
+public class OpportunityPageTest extends BaseTest{
 
 
     @Before
@@ -25,26 +25,43 @@ public class LoginPageTest extends BaseTest{
 
     @Pending
     @Test
-    public void loginExpectOk(){
+    public void getOpportunityWithContactsExpectOK(){
 
     }
 
     @Pending
     @Test
-    public void loginWrongPassExpectKO(){
+    public void getOpportunityWithNonExistingOpExpectKO(){
 
     }
 
     @Pending
     @Test
-    public void loginNonExistingUserExpectKO(){
+    public void markAsClientOKExpectOK(){
 
     }
-
+    
     @Pending
     @Test
-    public void loginInvalidDataExpectKO(){
+    public void markAsClientWithInvalidDataExpectKO(){
 
     }
+
+    
+    @Pending
+    @Test
+    public void saveContactExpectOK(){
+
+    }
+
+    
+    @Pending
+    @Test
+    public void saveContactWithInvalidDataExpectKO(){
+
+    }
+
+
+
 
 }
