@@ -4,21 +4,21 @@ import net.thucydides.core.annotations.Step;
 import org.junit.Assert;
 
 import com.serenity.sandbox.UIPages.LoginPage;
-import com.serenity.sandbox.UIPages.OpportunitiesPage;
+import com.serenity.sandbox.UIPages.OpportunitiesListPage;
 
-public class OpportunitiesPageSteps {
+public class OpportunitiesListPageSteps {
 
-    private OpportunitiesPage opportunitiesPage;
+    private OpportunitiesListPage opportunitiesListPage;
 
     @Step
     public void isOnOpportunitiesPage(){
-    	opportunitiesPage.open();
+    	opportunitiesListPage.open();
     }
 
 
     @Step
     public void existingOpportunityShouldBeVisible(){
-        Assert.assertTrue(opportunitiesPage.existingOpportunityIsVisible());
+        Assert.assertTrue(opportunitiesListPage.existingOpportunityIsVisible());
     }
 
 
