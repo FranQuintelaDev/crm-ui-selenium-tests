@@ -11,6 +11,10 @@ public class OpportunitiesListPage extends PageObject {
 	  public boolean existingOpportunityIsVisible(){
 	      return  $(By.xpath("//text()[contains(.,'Juan')]/parent::*")) != null;
 	  }
+
+	public boolean existingClientIsVisible() {
+	      return  $(By.xpath("//text()[contains(.,'Antonio')]/parent::*")) != null;
+	}
 	
 
 }

@@ -37,10 +37,9 @@ public class OpportunitiesListPageTest extends BaseTest{
 
     }
 
-    @Pending
     @Test
     public void getClientsThenFindExistingClExpectOK(){
-
+    	opportunitiesListPageSteps.existingClientShouldBeVisible();
     }
     @Pending
     @Test

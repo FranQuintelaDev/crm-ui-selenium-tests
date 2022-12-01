@@ -22,4 +22,10 @@ public class OpportunitiesListPageSteps {
     }
 
 
+	public void existingClientShouldBeVisible() {
+        Assert.assertTrue(opportunitiesListPage.existingClientIsVisible());
+		
+	}
+
+
 }
