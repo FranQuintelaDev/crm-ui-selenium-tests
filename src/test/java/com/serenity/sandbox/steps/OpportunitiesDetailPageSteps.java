@@ -21,6 +21,10 @@ public class OpportunitiesDetailPageSteps {
     	opportunitiesDetailPage.navigateToExistingOpportunity();
         Assert.assertTrue(opportunitiesDetailPage.existingOpportunityIsVisible());
     }
+    @Step
+    public void existingContactShouldBeVisible(){
+        Assert.assertTrue(opportunitiesDetailPage.existingContactIsVisible());
+    }
 
 
 }

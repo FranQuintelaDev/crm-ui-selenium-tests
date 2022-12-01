@@ -12,7 +12,11 @@ public class OpportunitiesDetailPage extends PageObject {
 	}
 
 	public boolean existingOpportunityIsVisible() {
-		return $(By.xpath("//text()[contains(.,'Juan')]/parent::*[@id='opportunityName']")) != null;
+		return $(By.xpath("//*[@id='opportunityName']//text()[contains(.,'Juan')]")) != null;
+	}
+
+	public boolean existingContactIsVisible() {
+		return $(By.xpath("//*[@id='contact']//text()[contains(.,'Email list')]")) != null;
 	}
 
 }
