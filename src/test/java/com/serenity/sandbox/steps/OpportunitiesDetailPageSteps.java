@@ -27,4 +27,12 @@ public class OpportunitiesDetailPageSteps {
     }
 
 
+	public void updateOpportunityAsClient(String reason) {
+    	opportunitiesDetailPage.updateOpportunityAsClient(reason);
+	}
+	
+	public void isClientTextShouldBeVisible() {
+    	opportunitiesDetailPage.isClientTextIsVisible();
+	}
+
 }

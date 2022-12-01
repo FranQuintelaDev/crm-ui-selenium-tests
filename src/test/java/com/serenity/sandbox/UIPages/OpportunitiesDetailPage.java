@@ -19,4 +19,13 @@ public class OpportunitiesDetailPage extends PageObject {
 		return $(By.xpath("//*[@id='contact']//text()[contains(.,'Email list')]")) != null;
 	}
 
+	public void updateOpportunityAsClient(String reason) {
+		$("#markAsClientButton").click();
+		$("#isClientReason").sendKeys(reason);
+		$("#isClientSubmitButton").click();
+		$("#closeModalButton").click();
+	}
+	public boolean isClientTextIsVisible() {
+		return $("#isClientText") != null;
+	}
 }
