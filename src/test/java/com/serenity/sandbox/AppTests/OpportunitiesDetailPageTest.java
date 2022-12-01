@@ -43,10 +43,11 @@ public class OpportunitiesDetailPageTest extends BaseTest{
 
     }
 
-    @Pending
     @Test
     public void markAsClientOKExpectOK(){
-
+    	opportunitiesDetailPageSteps.existingOpportunityShouldBeVisible();
+    	opportunitiesDetailPageSteps.updateOpportunityAsClient("Ha comprado un coche");
+    	opportunitiesDetailPageSteps.isClientTextShouldBeVisible();
     }
     
     @Pending
