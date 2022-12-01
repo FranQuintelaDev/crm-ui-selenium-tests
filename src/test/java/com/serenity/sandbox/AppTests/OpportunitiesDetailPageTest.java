@@ -57,10 +57,11 @@ public class OpportunitiesDetailPageTest extends BaseTest{
     }
 
     
-    @Pending
     @Test
     public void saveContactExpectOK(){
-
+    	opportunitiesDetailPageSteps.existingOpportunityShouldBeVisible();
+    	opportunitiesDetailPageSteps.addContact("Phone","Descuento 20%","2022-12-02");
+    	opportunitiesDetailPageSteps.addedContactShouldBeVisible();
     }
 
     

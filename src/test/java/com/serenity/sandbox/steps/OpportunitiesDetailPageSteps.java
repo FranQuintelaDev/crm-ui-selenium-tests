@@ -35,4 +35,16 @@ public class OpportunitiesDetailPageSteps {
     	opportunitiesDetailPage.isClientTextIsVisible();
 	}
 
+
+	public void addContact(String type, String title, String date) {
+    	opportunitiesDetailPage.addContact(type, title, date);
+		
+	}
+
+
+	public void addedContactShouldBeVisible() {
+    	opportunitiesDetailPage.addedContactShouldIsVisible();
+		
+	}
+
 }

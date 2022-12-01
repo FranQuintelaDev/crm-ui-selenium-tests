@@ -28,4 +28,18 @@ public class OpportunitiesDetailPage extends PageObject {
 	public boolean isClientTextIsVisible() {
 		return $("#isClientText") != null;
 	}
+
+	public boolean addedContactShouldIsVisible() {
+		return $(By.xpath("//*[@id='contact']//text()[contains(.,'Descuento 20%')]")) != null;
+	}
+
+	public void addContact(String type, String title, String date) {
+		$("#addContactButton").click();
+		$("#title").sendKeys(title);
+		$("#type").sendKeys(type);
+		$("#date").sendKeys(date);
+		$("#addContactSubmitButton").click();
+		$("#closeModalButton").click();
+		
+	}
 }
