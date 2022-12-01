@@ -31,20 +31,41 @@ public class OpportunitiesDetailPageTest extends BaseTest{
     	opportunitiesDetailPageSteps.existingOpportunityShouldBeVisible();
     }
 
-    @Pending
     @Test
-    public void getOpportunitiesThenCantFindExistingClientExpectOK(){
+    public void getOpportunityWithContactsExpectOK(){
+    	opportunitiesDetailPageSteps.existingOpportunityShouldBeVisible();
 
     }
 
     @Pending
     @Test
-    public void getClientsThenFindExistingClExpectOK(){
+    public void getOpportunityWithNonExistingOpExpectKO(){
 
     }
+
     @Pending
     @Test
-    public void getClientsThenCantFindExistingOpExpectOK(){
+    public void markAsClientOKExpectOK(){
+
+    }
+    
+    @Pending
+    @Test
+    public void markAsClientWithInvalidDataExpectKO(){
+
+    }
+
+    
+    @Pending
+    @Test
+    public void saveContactExpectOK(){
+
+    }
+
+    
+    @Pending
+    @Test
+    public void saveContactWithInvalidDataExpectKO(){
 
     }
     
