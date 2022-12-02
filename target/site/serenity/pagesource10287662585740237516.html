@@ -1,0 +1,241 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en"&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;meta charset="utf-8"&gt; <br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"&gt; <br/>
+  &lt;meta name="theme-color" content="#000000"&gt; <br/>
+  &lt;base href="/"&gt; &lt;!--<br/>
+      manifest.json provides metadata used when your web app is added to the<br/>
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/<br/>
+    --&gt; <br/>
+  &lt;link rel="manifest" href="/manifest.json"&gt; <br/>
+  &lt;link rel="shortcut icon" href="/favicon.ico"&gt; &lt;!--<br/>
+      Notice the use of  in the tags above.<br/>
+      It will be replaced with the URL of the `public` folder during the build.<br/>
+      Only files inside the `public` folder can be referenced from the HTML.<br/>
+<br/>
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will<br/>
+      work correctly both with client-side routing and a non-root public URL.<br/>
+      Learn how to configure a non-root public URL by running `npm run build`.<br/>
+    --&gt; <br/>
+  &lt;title&gt;Project1&lt;/title&gt; <br/>
+  &lt;script defer src="/static/js/bundle.js"&gt;&lt;/script&gt;<br/>
+  &lt;style&gt;a.navbar-brand {<br/>
+  white-space: normal;<br/>
+  text-align: center;<br/>
+  word-break: break-all;<br/>
+}<br/>
+<br/>
+html {<br/>
+  font-size: 14px;<br/>
+}<br/>
+@media (min-width: 768px) {<br/>
+  html {<br/>
+    font-size: 16px;<br/>
+  }<br/>
+}<br/>
+<br/>
+.box-shadow {<br/>
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);<br/>
+}<br/>
+<br/>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL05hdk1lbnUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsbUJBQW1CO0VBQ25CLGtCQUFrQjtFQUNsQixxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCO0FBQ0E7RUFDRTtJQUNFLGVBQWU7RUFDakI7QUFDRjs7QUFFQTtFQUNFLDhDQUE4QztBQUNoRCIsInNvdXJjZXNDb250ZW50IjpbImEubmF2YmFyLWJyYW5kIHtcclxuICB3aGl0ZS1zcGFjZTogbm9ybWFsO1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICB3b3JkLWJyZWFrOiBicmVhay1hbGw7XHJcbn1cclxuXHJcbmh0bWwge1xyXG4gIGZvbnQtc2l6ZTogMTRweDtcclxufVxyXG5AbWVkaWEgKG1pbi13aWR0aDogNzY4cHgpIHtcclxuICBodG1sIHtcclxuICAgIGZvbnQtc2l6ZTogMTZweDtcclxuICB9XHJcbn1cclxuXHJcbi5ib3gtc2hhZG93IHtcclxuICBib3gtc2hhZG93OiAwIC4yNXJlbSAuNzVyZW0gcmdiYSgwLCAwLCAwLCAuMDUpO1xyXG59XHJcbiJdLCJzb3VyY2VSb290IjoiIn0= */&lt;/style&gt;<br/>
+  &lt;style&gt;html,<br/>
+body {<br/>
+  padding: 0;<br/>
+  margin: 0;<br/>
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,<br/>
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,<br/>
+    sans-serif;<br/>
+}<br/>
+<br/>
+.rows {<br/>
+  display: flex;<br/>
+  flex-direction: column;<br/>
+  row-gap: 10px;<br/>
+<br/>
+}<br/>
+<br/>
+.cols {<br/>
+  display: flex;<br/>
+  flex-direction: row;<br/>
+  column-gap: 10px;<br/>
+  align-items: center;<br/>
+}<br/>
+<br/>
+.fluid {<br/>
+  width: 100%;<br/>
+}<br/>
+<br/>
+.j-c-space-between {<br/>
+  justify-content: space-between;<br/>
+}<br/>
+.al-i-center {<br/>
+  align-items: center;<br/>
+}<br/>
+.pd-x {<br/>
+  padding-left: 20px;<br/>
+  padding-right: 20px;<br/>
+}<br/>
+.pd-y{<br/>
+  padding-top: 20px;<br/>
+  padding-bottom: 20px;<br/>
+}<br/>
+<br/>
+/* On mouse-over, add a deeper shadow */<br/>
+.card:hover {<br/>
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);<br/>
+}<br/>
+<br/>
+/* Add some padding inside the card container */<br/>
+.container {<br/>
+  padding: 2px 16px;<br/>
+}<br/>
+<br/>
+.card {<br/>
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);<br/>
+  transition: 0.3s;<br/>
+  border-radius: 5px;<br/>
+  /* 5px rounded corners */<br/>
+}<br/>
+<br/>
+/* Add rounded corners to the top left and the top right corner of the image */<br/>
+img {<br/>
+  border-radius: 5px 5px 0 0;<br/>
+}<br/>
+<br/>
+a {<br/>
+  color: inherit;<br/>
+  text-decoration: none;<br/>
+  cursor: pointer;<br/>
+}<br/>
+<br/>
+<br/>
+.centeredPage{<br/>
+  height: 80vh;<br/>
+  justify-content: center;<br/>
+  align-items: center;<br/>
+}<br/>
+button{<br/>
+  border-radius: 10px 10px 10px 10px;<br/>
+}<br/>
+<br/>
+#isClientText{<br/>
+  font-weight: bold;<br/>
+  color:lightgreen<br/>
+}<br/>
+#isOpportunityText{<br/>
+  font-weight: bold;<br/>
+  color:lightblue<br/>
+}<br/>
+/* .bg-client{<br/>
+  background-color:lightgreen<br/>
+}<br/>
+.bg-opp{<br/>
+  background-color: lightblue;<br/>
+} */<br/>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jdXN0b20uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztFQUVFLFVBQVU7RUFDVixTQUFTO0VBQ1Q7O2NBRVk7QUFDZDs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsYUFBYTs7QUFFZjs7QUFFQTtFQUNFLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsZ0JBQWdCO0VBQ2hCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLDhCQUE4QjtBQUNoQztBQUNBO0VBQ0UsbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRSxpQkFBaUI7RUFDakIsb0JBQW9CO0FBQ3RCOztBQUVBLHVDQUF1QztBQUN2QztFQUNFLDJDQUEyQztBQUM3Qzs7QUFFQSwrQ0FBK0M7QUFDL0M7RUFDRSxpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSwwQ0FBMEM7RUFDMUMsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQix3QkFBd0I7QUFDMUI7O0FBRUEsOEVBQThFO0FBQzlFO0VBQ0UsMEJBQTBCO0FBQzVCOztBQUVBO0VBQ0UsY0FBYztFQUNkLHFCQUFxQjtFQUNyQixlQUFlO0FBQ2pCOzs7QUFHQTtFQUNFLFlBQVk7RUFDWix1QkFBdUI7RUFDdkIsbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRSxrQ0FBa0M7QUFDcEM7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakI7QUFDRjtBQUNBO0VBQ0UsaUJBQWlCO0VBQ2pCO0FBQ0Y7QUFDQTs7Ozs7R0FLRyIsInNvdXJjZXNDb250ZW50IjpbImh0bWwsXHJcbmJvZHkge1xyXG4gIHBhZGRpbmc6IDA7XHJcbiAgbWFyZ2luOiAwO1xyXG4gIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIFNlZ29lIFVJLCBSb2JvdG8sXHJcbiAgICBPeHlnZW4sIFVidW50dSwgQ2FudGFyZWxsLCBGaXJhIFNhbnMsIERyb2lkIFNhbnMsIEhlbHZldGljYSBOZXVlLFxyXG4gICAgc2Fucy1zZXJpZjtcclxufVxyXG5cclxuLnJvd3Mge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICByb3ctZ2FwOiAxMHB4O1xyXG5cclxufVxyXG5cclxuLmNvbHMge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICBjb2x1bW4tZ2FwOiAxMHB4O1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5mbHVpZCB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi5qLWMtc3BhY2UtYmV0d2VlbiB7XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG59XHJcbi5hbC1pLWNlbnRlciB7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxufVxyXG4ucGQteCB7XHJcbiAgcGFkZGluZy1sZWZ0OiAyMHB4O1xyXG4gIHBhZGRpbmctcmlnaHQ6IDIwcHg7XHJcbn1cclxuLnBkLXl7XHJcbiAgcGFkZGluZy10b3A6IDIwcHg7XHJcbiAgcGFkZGluZy1ib3R0b206IDIwcHg7XHJcbn1cclxuXHJcbi8qIE9uIG1vdXNlLW92ZXIsIGFkZCBhIGRlZXBlciBzaGFkb3cgKi9cclxuLmNhcmQ6aG92ZXIge1xyXG4gIGJveC1zaGFkb3c6IDAgOHB4IDE2cHggMCByZ2JhKDAsIDAsIDAsIDAuMik7XHJcbn1cclxuXHJcbi8qIEFkZCBzb21lIHBhZGRpbmcgaW5zaWRlIHRoZSBjYXJkIGNvbnRhaW5lciAqL1xyXG4uY29udGFpbmVyIHtcclxuICBwYWRkaW5nOiAycHggMTZweDtcclxufVxyXG5cclxuLmNhcmQge1xyXG4gIGJveC1zaGFkb3c6IDAgNHB4IDhweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTtcclxuICB0cmFuc2l0aW9uOiAwLjNzO1xyXG4gIGJvcmRlci1yYWRpdXM6IDVweDtcclxuICAvKiA1cHggcm91bmRlZCBjb3JuZXJzICovXHJcbn1cclxuXHJcbi8qIEFkZCByb3VuZGVkIGNvcm5lcnMgdG8gdGhlIHRvcCBsZWZ0IGFuZCB0aGUgdG9wIHJpZ2h0IGNvcm5lciBvZiB0aGUgaW1hZ2UgKi9cclxuaW1nIHtcclxuICBib3JkZXItcmFkaXVzOiA1cHggNXB4IDAgMDtcclxufVxyXG5cclxuYSB7XHJcbiAgY29sb3I6IGluaGVyaXQ7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG4gIGN1cnNvcjogcG9pbnRlcjtcclxufVxyXG5cclxuXHJcbi5jZW50ZXJlZFBhZ2V7XHJcbiAgaGVpZ2h0OiA4MHZoO1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbn1cclxuYnV0dG9ue1xyXG4gIGJvcmRlci1yYWRpdXM6IDEwcHggMTBweCAxMHB4IDEwcHg7XHJcbn1cclxuXHJcbiNpc0NsaWVudFRleHR7XHJcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgY29sb3I6bGlnaHRncmVlblxyXG59XHJcbiNpc09wcG9ydHVuaXR5VGV4dHtcclxuICBmb250LXdlaWdodDogYm9sZDtcclxuICBjb2xvcjpsaWdodGJsdWVcclxufVxyXG4vKiAuYmctY2xpZW50e1xyXG4gIGJhY2tncm91bmQtY29sb3I6bGlnaHRncmVlblxyXG59XHJcbi5iZy1vcHB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogbGlnaHRibHVlO1xyXG59ICovIl0sInNvdXJjZVJvb3QiOiIifQ== */&lt;/style&gt;<br/>
+  &lt;style&gt;.modal {<br/>
+    position: fixed;<br/>
+    left: 0;<br/>
+    top: 0;<br/>
+    right: 0;<br/>
+    bottom: 0;<br/>
+    background-color: rgba(0, 0, 0, 0.5);<br/>
+    display: flex;<br/>
+    align-items: center;<br/>
+    justify-content: center;<br/>
+    opacity: 0;<br/>
+    transition: all 0.3s ease-in-out;<br/>
+    pointer-events: none;<br/>
+  }<br/>
+  <br/>
+  .modal.enter-done {<br/>
+    opacity: 1;<br/>
+    pointer-events: visible;<br/>
+  }<br/>
+  <br/>
+  .modal.exit {<br/>
+    opacity: 0;<br/>
+  }<br/>
+  <br/>
+  .modal-content {<br/>
+    width: 500px;<br/>
+    background-color: #fff;<br/>
+    transition: all 0.3s ease-in-out;<br/>
+    transform: translateY(-200px);<br/>
+  }<br/>
+  <br/>
+  .modal.enter-done .modal-content {<br/>
+    transform: translateY(0);<br/>
+  }<br/>
+  <br/>
+  .modal.exit .modal-content {<br/>
+    transform: translateY(-200px);<br/>
+  }<br/>
+  <br/>
+  .modal-header,<br/>
+  .modal-footer {<br/>
+    padding: 10px;<br/>
+  }<br/>
+  <br/>
+  .modal-title {<br/>
+    margin: 0;<br/>
+  }<br/>
+  <br/>
+  .modal-body {<br/>
+    padding: 10px;<br/>
+    border-top: 1px solid #eee;<br/>
+    border-bottom: 1px solid #eee;<br/>
+  }<br/>
+  <br/>
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL01vZGFsLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGVBQWU7SUFDZixPQUFPO0lBQ1AsTUFBTTtJQUNOLFFBQVE7SUFDUixTQUFTO0lBQ1Qsb0NBQW9DO0lBQ3BDLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLFVBQVU7SUFDVixnQ0FBZ0M7SUFDaEMsb0JBQW9CO0VBQ3RCOztFQUVBO0lBQ0UsVUFBVTtJQUNWLHVCQUF1QjtFQUN6Qjs7RUFFQTtJQUNFLFVBQVU7RUFDWjs7RUFFQTtJQUNFLFlBQVk7SUFDWixzQkFBc0I7SUFDdEIsZ0NBQWdDO0lBQ2hDLDZCQUE2QjtFQUMvQjs7RUFFQTtJQUNFLHdCQUF3QjtFQUMxQjs7RUFFQTtJQUNFLDZCQUE2QjtFQUMvQjs7RUFFQTs7SUFFRSxhQUFhO0VBQ2Y7O0VBRUE7SUFDRSxTQUFTO0VBQ1g7O0VBRUE7SUFDRSxhQUFhO0lBQ2IsMEJBQTBCO0lBQzFCLDZCQUE2QjtFQUMvQiIsInNvdXJjZXNDb250ZW50IjpbIi5tb2RhbCB7XHJcbiAgICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgICBsZWZ0OiAwO1xyXG4gICAgdG9wOiAwO1xyXG4gICAgcmlnaHQ6IDA7XHJcbiAgICBib3R0b206IDA7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuNSk7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgb3BhY2l0eTogMDtcclxuICAgIHRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2UtaW4tb3V0O1xyXG4gICAgcG9pbnRlci1ldmVudHM6IG5vbmU7XHJcbiAgfVxyXG4gIFxyXG4gIC5tb2RhbC5lbnRlci1kb25lIHtcclxuICAgIG9wYWNpdHk6IDE7XHJcbiAgICBwb2ludGVyLWV2ZW50czogdmlzaWJsZTtcclxuICB9XHJcbiAgXHJcbiAgLm1vZGFsLmV4aXQge1xyXG4gICAgb3BhY2l0eTogMDtcclxuICB9XHJcbiAgXHJcbiAgLm1vZGFsLWNvbnRlbnQge1xyXG4gICAgd2lkdGg6IDUwMHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcclxuICAgIHRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2UtaW4tb3V0O1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC0yMDBweCk7XHJcbiAgfVxyXG4gIFxyXG4gIC5tb2RhbC5lbnRlci1kb25lIC5tb2RhbC1jb250ZW50IHtcclxuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgwKTtcclxuICB9XHJcbiAgXHJcbiAgLm1vZGFsLmV4aXQgLm1vZGFsLWNvbnRlbnQge1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC0yMDBweCk7XHJcbiAgfVxyXG4gIFxyXG4gIC5tb2RhbC1oZWFkZXIsXHJcbiAgLm1vZGFsLWZvb3RlciB7XHJcbiAgICBwYWRkaW5nOiAxMHB4O1xyXG4gIH1cclxuICBcclxuICAubW9kYWwtdGl0bGUge1xyXG4gICAgbWFyZ2luOiAwO1xyXG4gIH1cclxuICBcclxuICAubW9kYWwtYm9keSB7XHJcbiAgICBwYWRkaW5nOiAxMHB4O1xyXG4gICAgYm9yZGVyLXRvcDogMXB4IHNvbGlkICNlZWU7XHJcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI2VlZTtcclxuICB9XHJcbiAgIl0sInNvdXJjZVJvb3QiOiIifQ== */&lt;/style&gt;<br/>
+ &lt;/head&gt; <br/>
+ &lt;body&gt; <br/>
+  &lt;noscript&gt;<br/>
+    You need to enable JavaScript to run this app. <br/>
+  &lt;/noscript&gt; <br/>
+  &lt;div id="root"&gt;<br/>
+   &lt;div class="rows"&gt;<br/>
+    &lt;header class="cols j-c-space-between pd-x"&gt;<br/>
+     &lt;a id="homeLink" href="/"&gt;&lt;h2&gt;CRM&lt;/h2&gt;&lt;/a&gt;<br/>
+     &lt;div class="cols"&gt;<br/>
+      &lt;a id="opportunitiesLink" href="/opportunities"&gt;&lt;button class="bg-opp"&gt;Opportunities&lt;/button&gt;&lt;/a&gt;&lt;a id="clientsLink" href="/opportunities/clients"&gt;&lt;button class="bg-client"&gt;Clients&lt;/button&gt;&lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/header&gt;<br/>
+    &lt;div class="pd-x"&gt;<br/>
+     &lt;div class="centeredPage rows al-i-center"&gt;<br/>
+      &lt;h1 class="title"&gt;LogIn Page&lt;/h1&gt;<br/>
+      &lt;div class="card rows"&gt;<br/>
+       &lt;img src="https://via.placeholder.com/150 " alt="Avatar"&gt;<br/>
+       &lt;div class="pd-x pd-y"&gt;<br/>
+        &lt;form class="rows"&gt;<br/>
+         &lt;div&gt;<br/>
+          &lt;h3&gt;Log in&lt;/h3&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div&gt;<br/>
+          &lt;input type="text" name="username" id="username" placeholder="Username" value=""&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div&gt;<br/>
+          &lt;input type="password" name="password" id="password" placeholder="Password" value=""&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div&gt;<br/>
+          &lt;button id="logInButton"&gt;Log In&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/form&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt; &lt;!--<br/>
+      This HTML file is a template.<br/>
+      If you open it directly in the browser, you will see an empty page.<br/>
+<br/>
+      You can add webfonts, meta tags, or analytics to this file.<br/>
+      The build step will place the bundled scripts into the &lt;body&gt; tag.<br/>
+<br/>
+      To begin the development, run `npm start` or `yarn start`.<br/>
+      To create a production bundle, use `npm run build` or `yarn build`.<br/>
+    --&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
